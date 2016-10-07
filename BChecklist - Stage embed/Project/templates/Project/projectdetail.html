@@ -1,0 +1,8 @@
+<p><strong>Project Name :</strong> {{ project_data_detail.project_name}} </p>
+<p><strong>Publish Date :</strong> {{ project_data_detail.project_date }}</p>
+<p><strong>Project Stage Max :</strong> {{ project_data_detail.project_stage_max }}</p>
+{% if project_data_.detail.project_status == True %}
+	<p><strong>Project Status :</strong> Not Complete </p>
+{% else %}
+	<p><strong>Project Status :</strong> Complete </p>
+{% endif %}
