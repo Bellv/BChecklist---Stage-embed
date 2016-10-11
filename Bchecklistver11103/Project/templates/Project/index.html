@@ -1,0 +1,10 @@
+{% if latest_project_list %}
+<h3>Project List</h3>
+    <ul>
+    {% for ProjectData in latest_project_list %}
+        <li><a href="/Project/{{ ProjectData.id }}/">{{ ProjectData.project_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Project are available.</p>
+{% endif %}
